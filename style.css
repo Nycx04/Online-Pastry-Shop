@@ -1,0 +1,319 @@
+body{
+    margin:0;
+}
+
+.head {
+    position: relative; /* important so the overlay stays inside */
+    padding: 50px;
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white; /* makes text visible */
+    overflow: hidden; /* ensures overlay doesn’t spill out */
+    padding-bottom: 550px;
+}
+
+.head::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0; */
+    background: rgba(0, 0, 0, 0.5); /* adjust opacity for darkness */
+    z-index: 0;
+    opacity: 0.5; /* keeps it behind the text */
+}
+
+.head * {
+    position: relative;
+    z-index: 1; /* keeps text above the overlay */
+}
+
+.space {
+    display: flex;
+    border: 3px solid rgb(255, 255, 255,);
+    border-radius:  20px;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    gap:30px;
+    box-shadow: 0px 0px 10px rgb(0,0,0);
+    background-color: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 70px;;
+}
+
+.title {
+    font-family: "BBH Sans Bogle";
+    margin-left: 100px;
+    color:black;
+}
+
+.nav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    margin-left:auto;
+    margin-right:300px;
+}
+
+.nav a{
+    color:black;
+    text-decoration: none;
+    font-weight: 1000;
+}
+
+h1 {
+    font-family: "BBH Sans Bogle";
+    font-size: 50px;
+    padding-left:60px;
+    background-image:linear-gradient(
+        rgb(179, 176, 174) 15%, aliceblue 60%, rgb(121, 114, 105) 75%
+    );
+    background-clip:text;
+    color: transparent;
+    position:relative;
+    top:50px;
+}
+.secondline {
+    display:inline block;
+    padding-left:30px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 30px;
+    color:rgb(255, 255, 255)
+}
+
+.buy {
+    border: solid rgb(241, 98, 41);
+    background-color: rgb(241, 98, 41);
+    padding:10px;
+    font-size:20px;
+    border-radius: 20px;
+    color:rgb(255, 255, 255);
+    top:250px;
+}
+
+.main {
+    background-color: bisque;
+}
+
+.main h2 {
+    margin:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:40px;
+}
+
+#menu div { 
+    display:inline-block;
+    padding:30px;
+    border:solid beige 2px;
+    margin:70px;
+    background-color:beige;
+} /* container for pictires*/
+
+.pic2 {
+    width:250px;
+    height: auto;
+}
+
+.pic1 {
+    height:250px;
+    width:auto;
+}
+
+.pic3 {
+    height: 250px;
+    width:auto;
+}
+
+h2 {
+    font-family:"BBH Sans Bogle";
+    font-weight: 200;
+    font-size:40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.food1{
+    text-align: center;
+    font-size: 30px;
+    padding:2px;
+}
+
+.star1 {
+    color:gold;
+}
+
+.span1 {
+    color: black;
+    font-size:15px;
+}
+
+.p1h5{
+    margin-top:10px;
+    margin-bottom:2px;
+}
+
+.price1 {
+    color:green;
+    font-size:25px;
+}
+
+.b1 {
+    border:orange solid 3px;
+    background-color: orange;
+    border-radius: 20px;
+    font-size:20px;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.food2{
+    text-align: center;
+    font-size: 30px;
+    padding:2px;
+}
+
+.star2 {
+    color:gold;
+}
+
+#diff{
+    color:grey;
+}
+
+.span2 {
+    color:black;
+    font-size:15px;
+}
+
+.p2h5{
+    margin-top:10px;
+    margin-bottom:2px;
+}
+
+.price2 {
+    font-size:25px;
+    color:green;
+}
+
+.b2{
+    border:orange solid 3px;
+    background-color: orange;
+    border-radius: 20px;
+    font-size:20px;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.food3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.p3h5 {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.span3 {
+    color:black;
+    font-size:15px;
+}
+
+.star3{
+    color:gold;
+}
+
+.discount {
+    color:green;
+    font-size:25px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.newprice {
+    color:green;
+    text-decoration: none;
+    font-size:25px;
+}
+
+.b3 {
+    border:orange solid 3px;
+    background-color: orange;
+    border-radius: 20px;
+    font-size:20px;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.full{
+    position:relative;
+    left:870px;
+    bottom:40px;
+    border:solid 2px orange;
+    background-color: orange;
+    border-radius: 20px;
+    font-size: 30px;
+    padding:10px;
+}
+
+#footer{
+    background-color:black;
+    display:flex;
+    padding-bottom:50px;
+}
+
+.footercontact {
+    color:beige;
+    text-decoration: underline;
+    padding-left:200px;
+    border-right: solid orange 3px;
+    padding-right:50px;
+}
+
+.discord {
+    color:beige;
+    font-size: 25px;
+    margin-left: 200px;
+}
+
+.facebook {
+    color:beige;
+    font-size: 25px;
+    margin-left: 200px;
+    text-decoration:none;
+}
+
+.github {
+    color:beige;
+    font-size: 25px;
+    margin-left: 200px;
+    text-decoration:none;
+}
+
+.footertitle {
+    display:flex;
+    align-items:flex-start;
+    justify-content: center;
+    color: beige;
+    left:550px;
+    position: relative;
+    text-decoration: underline;
+}

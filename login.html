@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Momo+Trust+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bakery Login</title>
+</head>
+<body>
+    <header id="header">
+        <div class="Top">
+            <h1>Welcome!</h1>
+            <div class="LoginPage">
+                <h2 class="DivTop">Login / SignUp</h2>
+                <label class=" Name"> Username <input id="usernameInput"> <br> </label>
+                <label class=" Ps"> Password <input id="passwordInput"> <br> </label>
+                <button class="submit" onclick="openPopup()"> Log In </button>
+                <p class="choice">Or Log in with </p>
+                <i id="facebook" class="fa-brands fa-square-facebook"></i>
+                <i id="github" class="fa-brands fa-square-github"></i>
+                <i id="X" class="fa-brands fa-square-x-twitter"></i>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div id="popup">
+            <p>Confirmation</p>
+            <p id="unconfirm">hello </p>
+            <p id="psconfirm">hello </p>
+        <a id="button" href="index.html">GTFO</a>
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>
